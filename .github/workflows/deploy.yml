@@ -11,5 +11,5 @@ jobs:
       - run: cd app && npm ci && npx ng build --configuration production
       - uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          apiToken: ${{ secrets.MYMAHIRCLOUDFLAREWRANGLERSECRET }}
           command: deploy
